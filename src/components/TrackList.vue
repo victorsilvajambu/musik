@@ -60,10 +60,11 @@ onMounted(() => {
     </div>
 
     <div class="flex gap-4 flex-wrap">
-      <div
+      <ULink
         v-for="track in trackList"
         :key="track.name"
         class="flex md:flex-col w-full md:w-fit gap-4 shrink-0 bg-neutral-800 p-4 rounded-lg text-white"
+        :to="{ name: 'track', params: { artist: track.artist.name, track: track.name } }"
       >
         <div v-if="track.album">
           <img
@@ -91,7 +92,7 @@ onMounted(() => {
             {{ track.artist.name }}
           </span>
         </div>
-      </div>
+      </ULink>
     </div>
   </div>
 </template>
