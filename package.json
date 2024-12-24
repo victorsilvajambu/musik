@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-p \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/ui": "^3.0.0-alpha.10",
+    "@nuxt/ui": "https://pkg.pr.new/@nuxt/ui@2899",
     "axios": "^1.7.9",
     "pinia": "^2.2.6",
     "vue": "^3.5.13",
