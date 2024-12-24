@@ -48,7 +48,7 @@ const track = ref<Track>({
 })
 
 async function getTrackInfo() {
-  await axios.get('http://ws.audioscrobbler.com/2.0', {
+  await axios.get('https://ws.audioscrobbler.com/2.0', {
     params: {
       format: 'json',
       api_key: apiKey,
